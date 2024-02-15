@@ -24,7 +24,7 @@ int main() {
 			if (t[i] > lisV.back())
 				lisV.push_back(t[i]);
 			else if(t[i] > lisV.front()) {
-				auto it = lower_bound(lisV.begin()+1, lisV.end(), t[i]);
+				auto it = upper_bound(lisV.begin()+1, lisV.end(), t[i]);
 				*it= t[i];
 			}
 			
