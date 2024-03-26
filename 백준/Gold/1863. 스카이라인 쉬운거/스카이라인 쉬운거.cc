@@ -19,7 +19,7 @@ int main(void){
             s.push(temp2);
             res++;
         }
-        else if(!s.empty() || s.top() > temp2){
+        else if(!s.empty() && s.top() > temp2){
             while(!s.empty() && s.top() > temp2){
                 s.pop();
             }
